@@ -10,7 +10,7 @@
     "target": "ES2024",
     "module": "nodenext",
     "moduleDetection": "force",
-    "types": [],
+    "types": ["node"],
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
@@ -43,5 +43,5 @@
     "skipLibCheck": true,
     "noEmitOnError": true
   },
-  "include": ["src/**/*.ts", "hello.ts"]
+  "include": ["src/**/*.ts"]
 }
