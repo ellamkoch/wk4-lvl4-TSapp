@@ -1,5 +1,5 @@
 {
-  "name": "y",
+  "name": "wk4-lvl4-TSapp",
   "version": "1.0.0",
   "description": "This repo is for Week 4 of Level 4 for CodeX academy's homework to learn about TS.",
   "homepage": "https://github.com/ellamkoch/wk4-lvl4-TSapp#readme",
@@ -18,21 +18,24 @@
     "dev": "tsx watch src/server.ts",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "build": "tsc -p tsconfig.json",
-    "start": "node dist/server.js"
+    "start": "node dist/server.js",
+    "exercises:dev": "tsx watch src/exercises/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
+    "crypto": "^1.0.1",
     "esbuild": "^0.27.3",
+    "express": "^5.2.1",
     "get-tsconfig": "^4.13.6",
     "resolve-pkg-maps": "^1.0.0",
-    "undici-types": "^7.18.2",
-    "crypto": "^1.0.1",
-    "express": "^5.2.1"
+    "undici-types": "^7.18.2"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
-    "@types/node": "^25.3.2",
+    "@types/node": "^25.3.3",
     "tsx": "^4.21.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
   }
-
 }
