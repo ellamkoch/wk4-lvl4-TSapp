@@ -58,10 +58,20 @@ console.log("Week 4 Day 3 exercises. Run `npm test` and `npm run typecheck`.");
 //   console.log("Length:", value.length);
 // }
 
-import { twoSum } from "./algorithm/twoSum.js";
+// import { twoSum } from "./algorithm/twoSum.js";
 
-console.log(twoSum([2,7,11,15], 9));
+// console.log(twoSum([2,7,11,15], 9));
 
-console.log(twoSum([3,3], 6));
+// console.log(twoSum([3,3], 6));
 
-console.log(twoSum([1,2,3], 999));
+// console.log(twoSum([1,2,3], 999));
+
+import { isPalindrome } from "./algorithm/isPalindrome.js";
+
+console.log(isPalindrome('racecar'));
+
+console.log(isPalindrome('a man, a plan, a canal, panama'));
+
+console.log(isPalindrome('tacocat'));
+
+console.log(isPalindrome('hello'));
