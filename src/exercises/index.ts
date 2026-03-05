@@ -41,19 +41,27 @@ console.log("Week 4 Day 3 exercises. Run `npm test` and `npm run typecheck`.");
 
 // console.log(parseCsvIncludes(undefined, ["comments","author"]));
 
-import { isUuidV4 } from "./backend/isUuidV4.js";
+// import { isUuidV4 } from "./backend/isUuidV4.js";
 
-console.log(isUuidV4("3d594650-3436-4f56-ae0b-8fcd5aa5c2d4"));
+// console.log(isUuidV4("3d594650-3436-4f56-ae0b-8fcd5aa5c2d4"));
 
-console.log(isUuidV4("not-a-uuid"));
+// console.log(isUuidV4("not-a-uuid"));
 
-console.log(isUuidV4("3d594650-3436-4f56-ae0b-8fcd5aa5c2d4-xyz"));
+// console.log(isUuidV4("3d594650-3436-4f56-ae0b-8fcd5aa5c2d4-xyz"));
 
-console.log(isUuidV4(undefined));
+// console.log(isUuidV4(undefined));
 
-const value: unknown = "3d594650-3436-4f56-ae0b-8fcd5aa5c2d4";
+// const value: unknown = "3d594650-3436-4f56-ae0b-8fcd5aa5c2d4";
 
-if (isUuidV4(value)) {
-  console.log("Valid UUID:", value);
-  console.log("Length:", value.length);
-}
+// if (isUuidV4(value)) {
+//   console.log("Valid UUID:", value);
+//   console.log("Length:", value.length);
+// }
+
+import { twoSum } from "./algorithm/twoSum.js";
+
+console.log(twoSum([2,7,11,15], 9));
+
+console.log(twoSum([3,3], 6));
+
+console.log(twoSum([1,2,3], 999));
