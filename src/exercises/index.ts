@@ -4,17 +4,29 @@
  */
 console.log("Week 4 Day 3 exercises. Run `npm test` and `npm run typecheck`.");
 
-import { parseBearerToken } from "./backend/parseBearerToken.js";
+// import { parseBearerToken } from "./backend/parseBearerToken.js";
 
-// console.log(parseBearerToken("Basic xyz"));
+// // console.log(parseBearerToken("Basic xyz"));
 
-// const result = parseBearerToken("Bearer abc");
-// console.log(result);
+// // const result = parseBearerToken("Bearer abc");
+// // console.log(result);
 
-const result = parseBearerToken("Basic xyz");
+// const result = parseBearerToken("Basic xyz");
 
-if (result) {
-    console.log("Token found:", result);
-} else {
-    console.log("Invalid header");
-}
+// if (result) {
+//     console.log("Token found:", result);
+// } else {
+//     console.log("Invalid header");
+// }
+
+import { parsePagination } from "./backend/parsePagination.js";
+
+console.log(parsePagination(10,5));
+
+console.log(parsePagination(undefined,undefined));
+
+console.log(parsePagination("5", 10))
+
+// console.log(parsePagination("nope",5));
+
+console.log(parsePagination(0,5));
