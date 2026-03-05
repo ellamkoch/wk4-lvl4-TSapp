@@ -31,12 +31,29 @@ console.log("Week 4 Day 3 exercises. Run `npm test` and `npm run typecheck`.");
 
 // console.log(parsePagination(0,5));
 
-import { parseCsvIncludes } from "./backend/parseCsvIncludes.js";
+// import { parseCsvIncludes } from "./backend/parseCsvIncludes.js";
 
-console.log(parseCsvIncludes("comments,author", ["comments","author"]));
+// console.log(parseCsvIncludes("comments,author", ["comments","author"]));
 
-console.log(parseCsvIncludes("comments,likes,author", ["comments","author"]));
+// console.log(parseCsvIncludes("comments,likes,author", ["comments","author"]));
 
-console.log(parseCsvIncludes("  AUTHOR , comments  ", ["comments","author"]));
+// console.log(parseCsvIncludes("  AUTHOR , comments  ", ["comments","author"]));
 
-console.log(parseCsvIncludes(undefined, ["comments","author"]));
+// console.log(parseCsvIncludes(undefined, ["comments","author"]));
+
+import { isUuidV4 } from "./backend/isUuidV4.js";
+
+console.log(isUuidV4("3d594650-3436-4f56-ae0b-8fcd5aa5c2d4"));
+
+console.log(isUuidV4("not-a-uuid"));
+
+console.log(isUuidV4("3d594650-3436-4f56-ae0b-8fcd5aa5c2d4-xyz"));
+
+console.log(isUuidV4(undefined));
+
+const value: unknown = "3d594650-3436-4f56-ae0b-8fcd5aa5c2d4";
+
+if (isUuidV4(value)) {
+  console.log("Valid UUID:", value);
+  console.log("Length:", value.length);
+}
