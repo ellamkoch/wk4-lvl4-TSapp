@@ -76,8 +76,18 @@ console.log("Week 4 Day 3 exercises. Run `npm test` and `npm run typecheck`.");
 
 // console.log(isPalindrome('hello'));
 
-import { groupBy } from './algorithm/groupBy.js';
+// import { groupBy } from './algorithm/groupBy.js';
 
-console.log(groupBy(["a", "bb", "ccc", "dd"], (s) => s.length));
+// console.log(groupBy(["a", "bb", "ccc", "dd"], (s) => s.length));
 
+import { topKFrequent } from "./algorithm/topKFrequent.js";
 
+console.log(topKFrequent(["i", "love", "ts", "i", "love", "coding", "ts", "ts"],2));
+
+console.log(topKFrequent(["a", "b", "b"],1));
+
+console.log(topKFrequent(["cat","dog","cat","dog"], 2));
+
+console.log(topKFrequent(["a","b","c","a","b","c"], 3));
+
+console.log(topKFrequent(["x"], 1));
