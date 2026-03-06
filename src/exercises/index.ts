@@ -80,14 +80,24 @@ console.log("Week 4 Day 3 exercises. Run `npm test` and `npm run typecheck`.");
 
 // console.log(groupBy(["a", "bb", "ccc", "dd"], (s) => s.length));
 
-import { topKFrequent } from "./algorithm/topKFrequent.js";
+// import { topKFrequent } from "./algorithm/topKFrequent.js";
 
-console.log(topKFrequent(["i", "love", "ts", "i", "love", "coding", "ts", "ts"],2));
+// console.log(topKFrequent(["i", "love", "ts", "i", "love", "coding", "ts", "ts"],2));
 
-console.log(topKFrequent(["a", "b", "b"],1));
+// console.log(topKFrequent(["a", "b", "b"],1));
 
-console.log(topKFrequent(["cat","dog","cat","dog"], 2));
+// console.log(topKFrequent(["cat","dog","cat","dog"], 2));
 
-console.log(topKFrequent(["a","b","c","a","b","c"], 3));
+// console.log(topKFrequent(["a","b","c","a","b","c"], 3));
 
-console.log(topKFrequent(["x"], 1));
+// console.log(topKFrequent(["x"], 1));
+
+import { safeJsonParse } from "./backend/safeJsonParse.js";
+
+console.log(safeJsonParse('{"message":"good json"}'));
+
+console.log(safeJsonParse('10'));
+console.log(safeJsonParse('[10,11,12]'));
+
+console.log(safeJsonParse('{"bad json"}'));
+console.log(safeJsonParse(""));
