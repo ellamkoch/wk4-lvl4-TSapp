@@ -92,12 +92,20 @@ console.log("Week 4 Day 3 exercises. Run `npm test` and `npm run typecheck`.");
 
 // console.log(topKFrequent(["x"], 1));
 
-import { safeJsonParse } from "./backend/safeJsonParse.js";
+// import { safeJsonParse } from "./backend/safeJsonParse.js";
 
-console.log(safeJsonParse('{"message":"good json"}'));
+// console.log(safeJsonParse('{"message":"good json"}'));
 
-console.log(safeJsonParse('10'));
-console.log(safeJsonParse('[10,11,12]'));
+// console.log(safeJsonParse('10'));
+// console.log(safeJsonParse('[10,11,12]'));
 
-console.log(safeJsonParse('{"bad json"}'));
-console.log(safeJsonParse(""));
+// console.log(safeJsonParse('{"bad json"}'));
+// console.log(safeJsonParse(""));
+
+import { uniqueBy } from "./algorithm/uniqueBy.js";
+
+console.log(uniqueBy(["a", "b", "a", "c", "b"], x => x));
+
+console.log(uniqueBy([1,2,2,3,1],n => n));
+
+console.log(uniqueBy([],n => n));
